@@ -64,7 +64,6 @@ void add_goat(set<Goat>& trip, string names[], string colors[],
     string rndColors = colors[rand() % colorCount];
     int rndAge = rand() % (MAX_AGE - MIN_AGE + 1) + MIN_AGE;
     trip.insert(Goat(rndName, rndAge, rndColors));
-    trip.sort();
 }
 
 int select_goat(set<Goat> trip) {
